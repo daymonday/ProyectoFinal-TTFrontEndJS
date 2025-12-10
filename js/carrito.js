@@ -39,7 +39,7 @@ const renderizarCarrito=()=> {
         const btnEliminar=document.createElement("button");
         btnEliminar.classList.add("boton");
         btnEliminar.classList.add("boton-eliminar-carrito");
-        btnEliminar.textContent="Eliminar productos ";
+        btnEliminar.textContent="Eliminar producto❌";
 
         btnEliminar.addEventListener("click",()=>{
             eliminarProducto(indice);
