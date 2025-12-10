@@ -1,0 +1,368 @@
+/* Reset de css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Sin congiguracion el rem vale: */
+  /* 1rem = 16px */
+
+  /* Para que 1 rem = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Comic Relief", system-ui;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #F2F0EA;
+  color: #2d2a32;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #FF78AC;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  padding: 1rem;
+  margin-left: 2rem;
+
+  font-size: 2.4rem;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+.header__logo a {
+  color: #F2F0EA;
+  text-decoration: none;
+}
+
+.header__logo:hover {
+  font-size: 2.8rem;
+}
+
+.header__nav {
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__nav li {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.header__nav a {
+  color: #2d2a32;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+ /* display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;*/
+}
+
+footer,
+.footer {
+  background-color: #FF78AC;
+  padding: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+footer h3,
+.footer h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+footer p,
+.footer p {
+  font-size: 1.2rem;
+}
+
+footer nav ul,
+.footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+footer nav li,
+.footer nav li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carrito-icono {
+  font-size: 2.2rem;
+  line-height: 1;
+  display: inline-block;
+}
+
+
+/* INICIO */ 
+main {
+  width: 90%;
+  flex: 1;
+
+  margin: 2rem auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 3.2rem;
+  margin: 3rem;
+}
+
+main h3 {
+  font-size: 2.2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+main h4{
+  margin: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+main .detalle-prod {
+  font-size: 1.6rem;
+  text-align: right;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.productos-inicio {
+  width: 100%;
+  background-color: #F2F0EA;
+}
+
+.productos-inicio p {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#contenedor-carrito {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+#resumen-carrito {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #A8D5E3;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#resumen-carrito p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.tarjeta-producto {
+  background-color: #A8D5E3;
+  padding: 2rem;
+  border-radius: 2rem;
+  /* let the card size with content but limit its max width */
+  width: 100%;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column; /* stacked by default for small screens */
+  align-items: center;
+
+  /* separacion */
+  gap: 1.5rem;
+}
+
+.tarjeta-producto h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tarjeta-producto p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 25rem;
+}
+
+/*Pagina de contactos*/
+
+.seccion-contacto {
+  width: 100%;
+
+  margin: 2rem auto;
+}
+
+.titulo-contacto {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+.form {
+  background-color: #A8D5E3;
+  border-color: #FF78AC;
+  padding: 5rem;
+  border-radius: 1rem;
+
+  width: 60rem; /* ancho relativo */
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.campo-form label {
+  font-size: 2rem;
+}
+.campo-form input,
+.campo-form textarea {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.form button {
+  background: #b2b0b1;
+  color:#ffffff;
+  border: none;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: #FF78AC;
+}
+
+@media (max-width: 800px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__logo,
+  .header__nav {
+    margin: 0;
+  }
+
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-producto {
+    width: 80%;
+  }
+  .form {
+    width: 90%;
+    max-width: 50rem;
+  }
+
+}
+/* botones */
+.boton {
+  background: #b2b0b1;
+  color:#ffffff;
+  border: none;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+.boton:hover{
+  background-color: #45a049;
+}
+
+.boton-comprar{
+  background: #b2b0b1;
+  color:#ffffff;
+  padding: 2rem;
+}
+.boton-comprar:hover{
+  background-color: #45a049;
+}
+.boton-eliminar-carrito {
+  background-color: rgb(158, 13, 42);
+  border: none;
+}
+.boton-eliminar-carrito:hover{
+  background-color: #fc0202f2;
+}
+
+.boton-vaciar-carrito{
+  background: #b2b0b1;
+  color:#ffffff;
+  padding: 2rem;
+}
+.boton-vaciar-carrito:hover{
+  background-color: #FF78AC;
+
+}

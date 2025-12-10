@@ -1,0 +1,6 @@
+[ { "id":1,"nombre":"Bizcochos Salados Don Satur","precio":1200,"img":"img/donsatur.jpg"},
+{ "id":2,"nombre":"Mellizas","precio":1800,"img":"img/mellizas.png"},
+{ "id":3,"nombre":"Suavecitas","precio":600,"img":"img/suavecitas.png"},
+{ "id":4,"nombre":"Surtidas Terrabusi","precio":2000,"img":"img/surtidas.png"},
+{ "id":5,"nombre":"Bizcochos Dulces Hojalmar","precio":679.6,"img":"img/hojalmarbizcochos.PNG"},
+{ "id":6,"nombre":"Crackers Serranas","precio":2000,"img":"img/serranas.jpeg"}]

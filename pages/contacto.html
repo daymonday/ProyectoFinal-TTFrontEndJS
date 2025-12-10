@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Contacto | Panza Llena</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header class="header"> 
+            <p class="header__logo"> 
+                <a href="../index.html"> 🍪Panza Llena🍪</a> 
+            </p>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a> </li>
+                    <li><a href="./nosotros.html">Nosotros</a> </li>
+                    <li><a href="./contacto.html">Contacto</a> </li>
+                    <li><a href="./carrito.html" class="carrito-icono"> 🛒 <span id="contador-carrito">0</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p> Si tenes alguna consulta, contacta con nosotros! </p>
+            <h2 class="body-contactos">Dejanos tu mensaje</h2>
+            <form class="form" action="https://formspree.io/f/xjkaopwy" method="POST" autocomplete="on">
+                <label>Nombre:<input type="text" name="nombre" required></label>
+                <br>
+                <label>Correo:<input type="email" name="correo" required></label>
+                <br>
+                <label>Mensaje:
+                <textarea name="Mensaje" rows="6" cols="50"></textarea>
+                </label><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <footer class="footer"> 
+            <h3> ¡SEGUINOS EN NUESTRAS REDES! </h3>
+            <nav>
+                <ul>
+                    <li> Facebook </li>
+                    <li> Instagram </li>
+                    <li> Tiktok </li>
+                </ul>
+            </nav>
+            <p> Esta página fue creada en 2025. Todos los derechos reservados.</p>
+        </footer>
+        <script type="module" src="../js/carrito.js"></script>
+        <script type="module" src="../js/contacto.js"></script>
+    </body>
+</html>
